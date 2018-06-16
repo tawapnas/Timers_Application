@@ -1,0 +1,4 @@
+#Fri Jun 15 18:00:58 ICT 2018
+base.0=D\:\\Timer_Application\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\8
+path.0=classes.dex
+renamed.0=classes.dex

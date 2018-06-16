@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="45dp"
+    android:paddingRight="45dp"
+    tools:context=".MainActivity">
+
+    <SeekBar
+        android:id="@+id/mySeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="61dp" />
+
+    <ImageView
+        android:id="@+id/myImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="70dp"
+        android:layout_marginTop="194dp"
+        app:srcCompat="@drawable/a" />
+
+    <TextView
+        android:id="@+id/mySecond2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/myMinute2"
+        android:layout_toEndOf="@+id/mySecond1"
+        android:text="0"
+        android:textSize="50sp" />
+
+    <TextView
+        android:id="@+id/mySecond1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/myMinute2"
+        android:layout_toEndOf="@+id/Colon"
+        android:text="0"
+        android:textSize="50sp" />
+
+    <TextView
+        android:id="@+id/myMinute2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/Colon"
+        android:layout_toStartOf="@+id/Colon"
+        android:text="0"
+        android:textSize="50sp" />
+
+    <TextView
+        android:id="@+id/myMinute1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/myMinute2"
+        android:layout_toStartOf="@+id/myMinute2"
+        android:text="0"
+        android:textSize="50sp" />
+
+    <TextView
+        android:id="@+id/Colon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="88dp"
+        android:text=":"
+        android:textSize="50sp" />
+
+    <Button
+        android:id="@+id/myStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="79dp"
+        android:onClick="onStartTime"
+        android:text="Start" />
+</RelativeLayout>
